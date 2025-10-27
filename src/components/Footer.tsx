@@ -1,4 +1,4 @@
-import { Facebook, Instagram, Linkedin, Mail, Phone, MapPin } from "lucide-react";
+import { Instagram, Mail, Phone, MapPin } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -14,17 +14,16 @@ const Footer = () => {
               Starpools
             </div>
             <p className="text-white/70 mb-6 leading-relaxed">
-              Especialistas em construção de piscinas exclusivas em Belo Horizonte e região.
+              Especialistas em construção de piscinas exclusivas em São Paulo e região.
             </p>
             <div className="flex gap-4">
-              <a href="#" className="w-10 h-10 bg-white/10 hover:bg-secondary rounded-full flex items-center justify-center transition-colors">
+              <a 
+                href="https://www.instagram.com/starpoolsbr" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 bg-white/10 hover:bg-secondary rounded-full flex items-center justify-center transition-colors"
+              >
                 <Instagram className="w-5 h-5" />
-              </a>
-              <a href="#" className="w-10 h-10 bg-white/10 hover:bg-secondary rounded-full flex items-center justify-center transition-colors">
-                <Facebook className="w-5 h-5" />
-              </a>
-              <a href="#" className="w-10 h-10 bg-white/10 hover:bg-secondary rounded-full flex items-center justify-center transition-colors">
-                <Linkedin className="w-5 h-5" />
               </a>
             </div>
           </div>
@@ -91,8 +90,8 @@ const Footer = () => {
                 <Mail className="w-5 h-5 text-secondary flex-shrink-0 mt-0.5" />
                 <div>
                   <p className="text-white/70">Email</p>
-                  <a href="mailto:contato@starpools.com" className="hover:text-secondary transition-colors">
-                    contato@starpools.com
+                  <a href="mailto:starpoolrevest@gmail.com" className="hover:text-secondary transition-colors">
+                    starpoolrevest@gmail.com
                   </a>
                 </div>
               </li>
@@ -100,7 +99,7 @@ const Footer = () => {
                 <MapPin className="w-5 h-5 text-secondary flex-shrink-0 mt-0.5" />
                 <div>
                   <p className="text-white/70">Localização</p>
-                  <p>Belo Horizonte, MG</p>
+                  <p>São Paulo, SP</p>
                 </div>
               </li>
             </ul>

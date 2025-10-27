@@ -3,17 +3,20 @@ import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { ZoomIn } from "lucide-react";
-import poolAzulejo from "@/assets/pool-azulejo.jpg";
-import poolPastilha from "@/assets/pool-pastilha.jpg";
-import poolPlastering from "@/assets/pool-plastering.jpg";
+import az01 from "@/assets/az01.jpg";
+import az02 from "@/assets/az02.jpg";
+import pa01 from "@/assets/pa01.jpg";
+import pa02 from "@/assets/pa02.jpg";
+import pp01 from "@/assets/pp01.jpg";
+import pp02 from "@/assets/pp02.jpg";
 
 const galleryItems = [
-  { id: 1, category: "azulejo", title: "Piscina Resort com Azulejo Premium", type: "image", image: poolAzulejo },
-  { id: 2, category: "pastilha", title: "Piscina Infinita com Pastilha", type: "image", image: poolPastilha },
-  { id: 3, category: "plastering", title: "Pool Plastering Premium", type: "image", image: poolPlastering },
-  { id: 4, category: "azulejo", title: "Projeto Residencial Luxo", type: "image", image: poolAzulejo },
-  { id: 5, category: "pastilha", title: "Piscina com Borda Infinita", type: "image", image: poolPastilha },
-  { id: 6, category: "plastering", title: "Revestimento Americano", type: "image", image: poolPlastering },
+  { id: 1, category: "azulejo", title: "Piscina Resort com Azulejo Premium", type: "image", image: az01 },
+  { id: 2, category: "azulejo", title: "Projeto Residencial Luxo", type: "image", image: az02 },
+  { id: 3, category: "pastilha", title: "Piscina Infinita com Pastilha", type: "image", image: pa01 },
+  { id: 4, category: "pastilha", title: "Piscina com Borda Infinita", type: "image", image: pa02 },
+  { id: 5, category: "plastering", title: "Pool Plastering Premium", type: "image", image: pp01 },
+  { id: 6, category: "plastering", title: "Revestimento Americano", type: "image", image: pp02 },
 ];
 
 const Gallery = () => {

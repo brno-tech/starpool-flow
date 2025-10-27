@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -29,9 +30,8 @@ const Header = () => {
       }`}
     >
       <nav className="container mx-auto px-4 py-4 flex items-center justify-between">
-        <a href="#hero" className="text-2xl font-bold text-primary flex items-center gap-2">
-          <span className="text-secondary">★</span>
-          Starpools
+        <a href="#hero" className="flex items-center">
+          <img src={logo} alt="Starpools" className="h-12 w-auto" />
         </a>
 
         {/* Desktop Menu */}

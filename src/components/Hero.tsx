@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Award, Shield, Star } from "lucide-react";
+import { ArrowRight, Award, Shield, Star, Phone } from "lucide-react";
 import heroImage from "@/assets/hero-pool.jpg";
 
 const Hero = () => {
@@ -53,7 +53,7 @@ const Hero = () => {
           <div className="flex flex-wrap gap-4 mb-8 animate-fade-in">
             <div className="glass-dark px-4 py-2 rounded-full flex items-center gap-2 text-white text-sm">
               <Award className="w-4 h-4 text-secondary" />
-              <span>+500 Projetos Entregues</span>
+              <span>+200 Projetos Entregues</span>
             </div>
             <div className="glass-dark px-4 py-2 rounded-full flex items-center gap-2 text-white text-sm">
               <Star className="w-4 h-4 text-secondary" />
@@ -61,7 +61,7 @@ const Hero = () => {
             </div>
             <div className="glass-dark px-4 py-2 rounded-full flex items-center gap-2 text-white text-sm">
               <Shield className="w-4 h-4 text-secondary" />
-              <span>5 Anos de Garantia</span>
+              <span>10 Anos de Garantia</span>
             </div>
           </div>
 
@@ -88,6 +88,16 @@ const Hero = () => {
               <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
             </Button>
             
+            <Button
+              size="lg"
+              variant="hero-outline"
+              onClick={() => window.open("tel:5531998562030", "_blank")}
+              className="text-lg px-8 py-6"
+            >
+              <Phone className="mr-2" />
+              Ligar Agora
+            </Button>
+
             <Button
               size="lg"
               variant="hero-outline"

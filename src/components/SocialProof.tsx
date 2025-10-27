@@ -2,9 +2,9 @@ import { useEffect, useRef, useState } from "react";
 import { Award, Users, Ruler, ThumbsUp } from "lucide-react";
 
 const stats = [
-  { icon: Award, number: 500, suffix: "+", label: "Projetos Concluídos", color: "text-secondary" },
-  { icon: Users, number: 450, suffix: "+", label: "Clientes Satisfeitos", color: "text-primary" },
-  { icon: Ruler, number: 12000, suffix: "m²", label: "Área Construída", color: "text-secondary" },
+  { icon: Award, number: 200, suffix: "+", label: "Projetos Concluídos", color: "text-secondary" },
+  { icon: Users, number: 150, suffix: "+", label: "Clientes Satisfeitos", color: "text-primary" },
+  { icon: Ruler, number: 5000, suffix: "m²+", label: "Área Construída", color: "text-secondary" },
   { icon: ThumbsUp, number: 98, suffix: "%", label: "Taxa de Satisfação", color: "text-primary" },
 ];
 
@@ -91,10 +91,10 @@ const SocialProof = () => {
         {/* Trust Logos */}
         <div className="mt-20 text-center">
           <p className="text-muted-foreground mb-8 font-medium">
-            Atendemos os principais bairros de Belo Horizonte e região
+            Atendemos as principais cidades de São Paulo
           </p>
           <div className="flex flex-wrap justify-center gap-8 opacity-60">
-            {["Savassi", "Lourdes", "Belvedere", "Pampulha", "Nova Lima", "Mangabeiras"].map((area) => (
+            {["São Paulo", "Barueri", "Atibaia", "Sorocaba", "Campinas", "Litoral"].map((area) => (
               <span key={area} className="text-lg font-semibold text-primary">
                 {area}
               </span>

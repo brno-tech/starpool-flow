@@ -8,7 +8,7 @@ import {
 const faqs = [
   {
     question: "Quanto tempo leva para construir uma piscina?",
-    answer: "O prazo médio é de 30 a 45 dias úteis, dependendo do tamanho e complexidade do projeto. Isso inclui todas as etapas: escavação, estrutura, impermeabilização, acabamento e sistema de filtração.",
+    answer: "O prazo médio é de 60 a 90 dias úteis, dependendo do tamanho e complexidade do projeto. Isso inclui todas as etapas: escavação, estrutura, impermeabilização, acabamento e sistema de filtração.",
   },
   {
     question: "Qual a diferença entre os acabamentos disponíveis?",
@@ -24,7 +24,7 @@ const faqs = [
   },
   {
     question: "A garantia está inclusa?",
-    answer: "Sim! Oferecemos 5 anos de garantia em toda estrutura e impermeabilização, além de 1 ano nos equipamentos. Também fornecemos suporte técnico pós-obra para dúvidas sobre manutenção.",
+    answer: "Sim! Oferecemos 10 anos de garantia em toda estrutura e impermeabilização, além de 1 ano nos equipamentos. Também fornecemos suporte técnico pós-obra para dúvidas sobre manutenção.",
   },
   {
     question: "Vocês cuidam da documentação e licenças?",

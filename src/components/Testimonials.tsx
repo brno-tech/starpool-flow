@@ -4,21 +4,21 @@ import { Card } from "@/components/ui/card";
 const testimonials = [
   {
     name: "Carlos Mendes",
-    location: "Savassi, BH",
+    location: "São Paulo, SP",
     rating: 5,
     text: "Simplesmente perfeito! A equipe da Starpools superou todas as expectativas. O acabamento em pool plastering ficou impecável e a piscina é o sonho da família.",
     project: "Pool Plastering Premium",
   },
   {
     name: "Marina Silva",
-    location: "Belvedere, BH",
+    location: "Barueri, SP",
     rating: 5,
     text: "Profissionalismo do início ao fim. Cumpriram todos os prazos, foram transparentes com os custos e o resultado final é simplesmente incrível. Super recomendo!",
     project: "Piscina em Pastilha",
   },
   {
     name: "Roberto Alves",
-    location: "Pampulha, BH",
+    location: "Sorocaba, SP",
     rating: 5,
     text: "A melhor decisão foi contratar a Starpools. Eles transformaram nosso quintal em um verdadeiro resort. A qualidade dos materiais e mão de obra é excepcional.",
     project: "Piscina Alvenaria + Azulejo",
@@ -84,7 +84,7 @@ const Testimonials = () => {
             </div>
             <div className="w-px h-12 bg-border" />
             <div>
-              <div className="text-4xl font-extrabold text-primary mb-1">450+</div>
+              <div className="text-4xl font-extrabold text-primary mb-1">100+</div>
               <p className="text-sm text-muted-foreground">Avaliações</p>
             </div>
             <div className="w-px h-12 bg-border" />

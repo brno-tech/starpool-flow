@@ -168,7 +168,7 @@ Gostaria de receber um orçamento!`;
             </div>
             <div className="glass-dark p-6 rounded-xl">
               <p className="text-white/80 font-semibold mb-2">📧 Email</p>
-              <p className="text-white">contato@starpools.com</p>
+              <p className="text-white">starpoolrevest@gmail.com</p>
             </div>
             <div className="glass-dark p-6 rounded-xl">
               <p className="text-white/80 font-semibold mb-2">⏰ Horário</p>

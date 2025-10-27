@@ -1,11 +1,15 @@
 import { Waves, Brush, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import piscinasAlvenaria from "@/assets/piscinasalvenaria.jpg";
+import acabamentoAzulejo from "@/assets/acabamentoazulejo.jpg";
+import poolPlastering from "@/assets/poolplastering.jpg";
 
 const services = [
   {
     icon: Waves,
     title: "Piscina em Alvenaria",
     description: "Estrutura robusta e durável, ideal para projetos personalizados com formas e tamanhos sob medida.",
+    image: piscinasAlvenaria,
     features: [
       "Estrutura em alvenaria reforçada",
       "Impermeabilização de alta qualidade",
@@ -18,6 +22,7 @@ const services = [
     icon: Brush,
     title: "Acabamento em Azulejo/Pastilha",
     description: "Beleza e sofisticação com azulejos e pastilhas que transformam sua piscina em obra de arte.",
+    image: acabamentoAzulejo,
     features: [
       "Pastilhas de vidro importadas",
       "Azulejos cerâmicos premium",
@@ -30,6 +35,7 @@ const services = [
     icon: Sparkles,
     title: "Pool Plastering",
     description: "Revestimento americano de alta performance, resistente e com acabamento impecável tipo resort.",
+    image: poolPlastering,
     features: [
       "Revestimento americano premium",
       "Textura suave ao toque",
@@ -65,13 +71,18 @@ const Services = () => {
               className="group hover-lift bg-card rounded-3xl overflow-hidden shadow-lg"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              {/* Gradient Header */}
-              <div className={`bg-gradient-to-br ${service.gradient} p-8 relative overflow-hidden`}>
-                <div className="absolute inset-0 opacity-10">
-                  <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width=%2720%27 height=%2720%27 xmlns=%27http://www.w3.org/2000/svg%27%3E%3Cpath d=%27M0 0h20v20H0z%27 fill=%27none%27/%3E%3Cpath d=%27M10 0L0 10l10 10 10-10L10 0z%27 fill=%27%23fff%27/%3E%3C/svg%3E')]" />
+              {/* Gradient Header with Image */}
+              <div className={`bg-gradient-to-br ${service.gradient} relative overflow-hidden h-64`}>
+                <img 
+                  src={service.image} 
+                  alt={service.title}
+                  className="absolute inset-0 w-full h-full object-cover opacity-40"
+                />
+                <div className="absolute inset-0 bg-gradient-to-br ${service.gradient} opacity-80" />
+                <div className="absolute inset-0 p-8 flex flex-col justify-end">
+                  <service.icon className="w-16 h-16 text-white mb-4 group-hover:scale-110 transition-transform" />
+                  <h3 className="text-2xl font-bold text-white">{service.title}</h3>
                 </div>
-                <service.icon className="w-16 h-16 text-white mb-4 relative z-10 group-hover:scale-110 transition-transform" />
-                <h3 className="text-2xl font-bold text-white relative z-10">{service.title}</h3>
               </div>
 
               {/* Content */}
@@ -111,7 +122,7 @@ const Services = () => {
               <Sparkles className="w-6 h-6 text-white" />
             </div>
             <div className="text-left">
-              <p className="font-bold text-primary">Garantia de 5 Anos</p>
+              <p className="font-bold text-primary">Garantia de 10 Anos</p>
               <p className="text-sm text-muted-foreground">100% de satisfação ou seu dinheiro de volta</p>
             </div>
           </div>
