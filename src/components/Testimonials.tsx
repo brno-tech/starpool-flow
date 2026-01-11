@@ -4,21 +4,21 @@ import { Card } from "@/components/ui/card";
 const testimonials = [
   {
     name: "Carlos Mendes",
-    location: "São Paulo, SP",
+    location: "Belo Horizonte, MG",
     rating: 5,
     text: "Simplesmente perfeito! A equipe da Starpools superou todas as expectativas. O acabamento em pool plastering ficou impecável e a piscina é o sonho da família.",
     project: "Pool Plastering Premium",
   },
   {
     name: "Marina Silva",
-    location: "Barueri, SP",
+    location: "Nova Lima, MG",
     rating: 5,
     text: "Profissionalismo do início ao fim. Cumpriram todos os prazos, foram transparentes com os custos e o resultado final é simplesmente incrível. Super recomendo!",
     project: "Piscina em Pastilha",
   },
   {
     name: "Roberto Alves",
-    location: "Sorocaba, SP",
+    location: "Lagoa Santa, MG",
     rating: 5,
     text: "A melhor decisão foi contratar a Starpools. Eles transformaram nosso quintal em um verdadeiro resort. A qualidade dos materiais e mão de obra é excepcional.",
     project: "Piscina Alvenaria + Azulejo",

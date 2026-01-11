@@ -15,7 +15,7 @@ const Footer = () => {
               Starpools
             </div>
             <p className="text-white/70 mb-6 leading-relaxed">
-              Especialistas em construção de piscinas exclusivas em São Paulo e região.
+              Especialistas em construção de piscinas exclusivas em Minas Gerais.
             </p>
             <div className="flex gap-4">
               <a 
@@ -104,7 +104,7 @@ const Footer = () => {
                 <MapPin className="w-5 h-5 text-secondary flex-shrink-0 mt-0.5" />
                 <div>
                   <p className="text-white/70">Localização</p>
-                  <p>São Paulo, SP</p>
+                  <p>Belo Horizonte, MG</p>
                 </div>
               </li>
             </ul>

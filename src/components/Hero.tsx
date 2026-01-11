@@ -118,7 +118,7 @@ const Hero = () => {
           {/* Urgency Badge */}
           <div className="glass-dark inline-block px-6 py-3 rounded-lg animate-pulse">
             <p className="text-white text-sm">
-              🔥 <span className="font-semibold">Últimas 5 vagas</span> para projetos deste trimestre
+              🔥 <span className="font-semibold">Últimas 3 vagas</span> para projetos neste mês
             </p>
           </div>
         </div>

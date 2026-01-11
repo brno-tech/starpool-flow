@@ -91,10 +91,10 @@ const SocialProof = () => {
         {/* Trust Logos */}
         <div className="mt-20 text-center">
           <p className="text-muted-foreground mb-8 font-medium">
-            Atendemos as principais cidades de São Paulo
+            Atendemos as principais cidades da grande BH
           </p>
           <div className="flex flex-wrap justify-center gap-8 opacity-60">
-            {["São Paulo", "Barueri", "Atibaia", "Sorocaba", "Campinas", "Litoral"].map((area) => (
+            {["Belo Horizonte", "Nova Lima", "Lagoa Santa", "Contagem", "Brumadinho", "Outras"].map((area) => (
               <span key={area} className="text-lg font-semibold text-primary">
                 {area}
               </span>

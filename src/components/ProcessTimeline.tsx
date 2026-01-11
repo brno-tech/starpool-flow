@@ -102,7 +102,7 @@ const ProcessTimeline = () => {
               ⏰ Agenda Limitada
             </p>
             <p className="text-muted-foreground">
-              Aceitamos apenas <span className="text-secondary font-bold">12 projetos por mês</span> para garantir qualidade máxima
+              Executamos apenas <span className="text-secondary font-bold">5 projetos em paralelo</span> para garantir qualidade máxima
             </p>
           </div>
         </div>
