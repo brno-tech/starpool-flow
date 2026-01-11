@@ -1,3 +1,5 @@
+declare function gtag(...args: unknown[]): void;
+
 const WEBHOOK_URL = "https://n8nbrno.com.br/webhook/4bdea25a-dab3-4f4f-975d-e083f77f38d0";
 const GCLID_KEY = "gclid";
 
@@ -55,10 +57,12 @@ export function trackPageAccess(pagina: string = "home"): void {
 
 export function trackWhatsAppClick(pagina: string = "home"): void {
   sendEvent("clique_whatsapp", pagina);
+  gtag('event', 'conversion', {'send_to': 'AW-10854883318/oN64CPadluEbEPa_gbgo'});
 }
 
 export function trackPhoneClick(pagina: string = "home"): void {
   sendEvent("clique_ligacao", pagina);
+  gtag('event', 'conversion', {'send_to': 'AW-10854883318/adRhCPmdluEbEPa_gbgo'});
 }
 
 export function useTracking() {
