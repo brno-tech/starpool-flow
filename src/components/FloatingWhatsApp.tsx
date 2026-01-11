@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { X } from "lucide-react";
+import { trackWhatsAppClick } from "@/hooks/useTracking";
 
 const FloatingWhatsApp = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -23,6 +24,7 @@ const FloatingWhatsApp = () => {
   }, []);
 
   const handleClick = () => {
+    trackWhatsAppClick("home");
     const message = "Olá! Gostaria de saber mais sobre construção de piscinas.";
     window.open(`https://wa.me/5531998562030?text=${encodeURIComponent(message)}`, "_blank");
   };

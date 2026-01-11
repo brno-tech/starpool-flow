@@ -6,6 +6,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { toast } from "sonner";
 import { Lock, Send } from "lucide-react";
+import { trackWhatsAppClick } from "@/hooks/useTracking";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -34,7 +35,8 @@ ${formData.message ? `\nMensagem: ${formData.message}` : ''}
 Gostaria de receber um orçamento!`;
 
     const whatsappUrl = `https://wa.me/5531998562030?text=${encodeURIComponent(whatsappMessage)}`;
-    
+
+    trackWhatsAppClick("home");
     window.open(whatsappUrl, "_blank");
     toast.success("Redirecionando para o WhatsApp...");
     

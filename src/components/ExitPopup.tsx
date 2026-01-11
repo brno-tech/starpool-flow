@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { X, Gift } from "lucide-react";
+import { trackWhatsAppClick } from "@/hooks/useTracking";
 
 const ExitPopup = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,6 +25,7 @@ const ExitPopup = () => {
   }, [hasShown]);
 
   const handleClaim = () => {
+    trackWhatsAppClick("home");
     const message = "Olá! Vi a oferta especial e gostaria de garantir meu desconto de 10%!";
     window.open(`https://wa.me/5531998562030?text=${encodeURIComponent(message)}`, "_blank");
     setIsOpen(false);

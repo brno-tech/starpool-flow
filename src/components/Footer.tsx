@@ -1,4 +1,5 @@
 import { Instagram, Mail, Phone, MapPin } from "lucide-react";
+import { trackPhoneClick } from "@/hooks/useTracking";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -81,7 +82,11 @@ const Footer = () => {
                 <Phone className="w-5 h-5 text-secondary flex-shrink-0 mt-0.5" />
                 <div>
                   <p className="text-white/70">Telefone</p>
-                  <a href="tel:5531998562030" className="hover:text-secondary transition-colors">
+                  <a
+                    href="tel:5531998562030"
+                    className="hover:text-secondary transition-colors"
+                    onClick={() => trackPhoneClick("home")}
+                  >
                     (31) 99856-2030
                   </a>
                 </div>

@@ -2,6 +2,7 @@ import { useEffect, useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Award, Shield, Star, Phone } from "lucide-react";
 import heroImage from "@/assets/hero-pool.jpg";
+import { trackWhatsAppClick, trackPhoneClick } from "@/hooks/useTracking";
 
 const Hero = () => {
   const heroRef = useRef<HTMLDivElement>(null);
@@ -91,7 +92,10 @@ const Hero = () => {
             <Button
               size="lg"
               variant="hero-outline"
-              onClick={() => window.open("tel:5531998562030", "_blank")}
+              onClick={() => {
+                trackPhoneClick("home");
+                window.open("tel:5531998562030", "_blank");
+              }}
               className="text-lg px-8 py-6"
             >
               <Phone className="mr-2" />
@@ -101,7 +105,10 @@ const Hero = () => {
             <Button
               size="lg"
               variant="hero-outline"
-              onClick={() => window.open("https://wa.me/5531998562030", "_blank")}
+              onClick={() => {
+                trackWhatsAppClick("home");
+                window.open("https://wa.me/5531998562030", "_blank");
+              }}
               className="text-lg px-8 py-6"
             >
               WhatsApp Direto

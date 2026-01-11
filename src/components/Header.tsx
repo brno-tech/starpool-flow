@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import logo from "@/assets/logo.png";
+import { trackWhatsAppClick } from "@/hooks/useTracking";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -48,7 +49,10 @@ const Header = () => {
           ))}
           <li>
             <Button
-              onClick={() => window.open("https://wa.me/5531998562030", "_blank")}
+              onClick={() => {
+                trackWhatsAppClick("home");
+                window.open("https://wa.me/5531998562030", "_blank");
+              }}
               className="bg-primary hover:bg-primary-glow text-primary-foreground pulse-glow"
             >
               Solicitar Orçamento
@@ -83,6 +87,7 @@ const Header = () => {
             <li>
               <Button
                 onClick={() => {
+                  trackWhatsAppClick("home");
                   window.open("https://wa.me/5531998562030", "_blank");
                   setIsMobileMenuOpen(false);
                 }}
