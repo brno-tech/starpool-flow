@@ -100,7 +100,7 @@ const Hero = () => {
                 onClick={() => trackPhoneClick("hero")}
               >
                 <Phone className="mr-2" />
-                (31) 99856-2030
+                Ligar Agora
               </a>
             </Button>
 
