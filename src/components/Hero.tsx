@@ -1,11 +1,19 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Award, Shield, Star, Phone } from "lucide-react";
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import heroImage from "@/assets/hero-pool.jpg";
 import { trackWhatsAppClick, trackPhoneClick } from "@/hooks/useTracking";
 
 const Hero = () => {
   const heroRef = useRef<HTMLDivElement>(null);
+  const [isPhoneModalOpen, setIsPhoneModalOpen] = useState(false);
+
+  const handlePhoneClick = () => {
+    trackPhoneClick("home");
+    window.open("tel:5531998562030", "_self");
+    setIsPhoneModalOpen(false);
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -92,10 +100,7 @@ const Hero = () => {
             <Button
               size="lg"
               variant="hero-outline"
-              onClick={() => {
-                trackPhoneClick("home");
-                window.open("tel:5531998562030", "_blank");
-              }}
+              onClick={() => setIsPhoneModalOpen(true)}
               className="text-lg px-8 py-6"
             >
               <Phone className="mr-2" />
@@ -126,6 +131,33 @@ const Hero = () => {
 
       {/* Bottom Gradient Fade */}
       <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent" />
+
+      {/* Phone Modal */}
+      <Dialog open={isPhoneModalOpen} onOpenChange={setIsPhoneModalOpen}>
+        <DialogContent className="max-w-md">
+          <DialogHeader>
+            <DialogTitle className="text-center text-2xl font-bold text-primary">
+              Ligue Agora
+            </DialogTitle>
+          </DialogHeader>
+          <div className="text-center py-6">
+            <p className="text-muted-foreground mb-4">
+              Clique no número abaixo para ligar:
+            </p>
+            <Button
+              size="lg"
+              onClick={handlePhoneClick}
+              className="text-2xl font-bold px-8 py-6 bg-primary hover:bg-primary-glow"
+            >
+              <Phone className="mr-3 w-6 h-6" />
+              (31) 99856-2030
+            </Button>
+            <p className="text-sm text-muted-foreground mt-4">
+              Horário de atendimento: Seg-Sex 8h-18h | Sáb 8h-12h
+            </p>
+          </div>
+        </DialogContent>
+      </Dialog>
     </section>
   );
 };

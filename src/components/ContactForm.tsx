@@ -6,7 +6,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { toast } from "sonner";
 import { Lock, Send } from "lucide-react";
-import { trackWhatsAppClick } from "@/hooks/useTracking";
+import { trackWhatsAppClick, trackPhoneClick } from "@/hooks/useTracking";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -166,7 +166,13 @@ Gostaria de receber um orçamento!`;
           <div className="mt-12 grid md:grid-cols-3 gap-6 text-center">
             <div className="glass-dark p-6 rounded-xl">
               <p className="text-white/80 font-semibold mb-2">📞 Telefone</p>
-              <p className="text-white">(31) 99856-2030</p>
+              <a
+                href="tel:5531998562030"
+                className="text-white hover:text-secondary transition-colors"
+                onClick={() => trackPhoneClick("contato")}
+              >
+                (31) 99856-2030
+              </a>
             </div>
             <div className="glass-dark p-6 rounded-xl">
               <p className="text-white/80 font-semibold mb-2">📧 Email</p>

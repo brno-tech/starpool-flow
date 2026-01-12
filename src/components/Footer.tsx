@@ -85,7 +85,7 @@ const Footer = () => {
                   <a
                     href="tel:5531998562030"
                     className="hover:text-secondary transition-colors"
-                    onClick={() => trackPhoneClick("home")}
+                    onClick={() => trackPhoneClick("footer")}
                   >
                     (31) 99856-2030
                   </a>
