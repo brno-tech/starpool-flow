@@ -24,24 +24,15 @@ function getStoredGclid(): string {
   return localStorage.getItem(GCLID_KEY) || "";
 }
 
-async function sendEvent(evento: EventType, pagina: string = "home"): Promise<void> {
+function sendEvent(evento: EventType, pagina: string = "home"): void {
   const payload: TrackingPayload = {
     evento,
     pagina,
     gclid: getStoredGclid(),
   };
 
-  try {
-    await fetch(WEBHOOK_URL, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(payload),
-    });
-  } catch (error) {
-    console.error("Tracking error:", error);
-  }
+  const blob = new Blob([JSON.stringify(payload)], { type: "application/json" });
+  navigator.sendBeacon(WEBHOOK_URL, blob);
 }
 
 export function initTracking(): void {
