@@ -56,7 +56,7 @@ export function trackPageAccess(pagina: string = "home"): void {
 
 export function trackWhatsAppClick(pagina: string = "home"): void {
   sendEvent("clique_whatsapp", pagina);
-  gtag('event', 'conversion', {'send_to': 'AW-10854883318/oN64CPadluEbEPa_gbgo'});
+  gtag('event', 'conversion', {'send_to': 'AW-10854883318/cbiqCMKU5eEbEPa_gbgo'});
 }
 
 export function trackPhoneClick(pagina: string = "home"): void {
