@@ -31,8 +31,16 @@ function sendEvent(evento: EventType, pagina: string = "home"): void {
     gclid: getStoredGclid(),
   };
 
-  const blob = new Blob([JSON.stringify(payload)], { type: "application/json" });
-  navigator.sendBeacon(WEBHOOK_URL, blob);
+  fetch(WEBHOOK_URL, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(payload),
+    keepalive: true,
+  }).catch(() => {
+    // Silently fail
+  });
 }
 
 export function initTracking(): void {
