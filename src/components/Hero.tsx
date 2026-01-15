@@ -68,13 +68,12 @@ const Hero = () => {
 
           {/* Main Content */}
           <h1 className="text-5xl md:text-7xl font-extrabold text-white mb-6 leading-tight animate-slide-in-left">
-            Sua Piscina dos{" "}
-            <span className="text-secondary">Sonhos</span> Começa Aqui
+            Piscinas Sob Medida em{" "}
+            <span className="text-secondary">Alvenaria Estrutural</span>
           </h1>
-          
+
           <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-2xl animate-fade-in">
-            Especialistas em construção de piscinas exclusivas em alvenaria e concreto armado. 
-            Acabamentos premium que transformam seu quintal em um verdadeiro oásis.
+            Projetos exclusivos, executados com precisão técnica, estética arquitetônica e alto padrão construtivo.
           </p>
 
           {/* CTA Buttons */}

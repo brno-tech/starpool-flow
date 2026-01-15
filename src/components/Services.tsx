@@ -7,7 +7,7 @@ import poolPlastering from "@/assets/poolplastering.jpg";
 const services = [
   {
     icon: Waves,
-    title: "Piscina em Alvenaria",
+    title: "Projetos Arquitetônicos Sob Medida",
     description: "Estrutura robusta e durável, ideal para projetos personalizados com formas e tamanhos sob medida.",
     image: piscinasAlvenaria,
     features: [
@@ -20,7 +20,7 @@ const services = [
   },
   {
     icon: Brush,
-    title: "Acabamento em Azulejo/Pastilha",
+    title: "Alto Padrão de Acabamento",
     description: "Beleza e sofisticação com azulejos e pastilhas que transformam sua piscina em obra de arte.",
     image: acabamentoAzulejo,
     features: [
@@ -33,7 +33,7 @@ const services = [
   },
   {
     icon: Sparkles,
-    title: "Pool Plastering",
+    title: "Revestimento Americano Premium",
     description: "Revestimento americano de alta performance, resistente e com acabamento impecável tipo resort.",
     image: poolPlastering,
     features: [

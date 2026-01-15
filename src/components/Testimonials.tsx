@@ -10,7 +10,7 @@ const testimonials = [
     project: "Pool Plastering Premium",
   },
   {
-    name: "Marina Silva",
+    name: "Fernanda Becker",
     location: "Nova Lima, MG",
     rating: 5,
     text: "Profissionalismo do início ao fim. Cumpriram todos os prazos, foram transparentes com os custos e o resultado final é simplesmente incrível. Super recomendo!",
