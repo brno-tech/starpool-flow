@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
-import logo from "@/assets/logo.png";
 import { trackWhatsAppClick } from "@/hooks/useTracking";
 
 const Header = () => {
@@ -31,8 +30,8 @@ const Header = () => {
       }`}
     >
       <nav className="container mx-auto px-4 py-4 flex items-center justify-between">
-        <a href="#hero" className="flex items-center">
-          <img src={logo} alt="Piscinas Exclusivas" className="h-12 w-auto" />
+<a href="#hero" className="flex items-center font-bold text-xl text-primary">
+          Piscinas Exclusivas
         </a>
 
         {/* Desktop Menu */}
