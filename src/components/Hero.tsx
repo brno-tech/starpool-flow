@@ -84,7 +84,7 @@ const Hero = () => {
               onClick={() => document.getElementById("contato")?.scrollIntoView({ behavior: "smooth" })}
               className="text-lg px-8 py-6 pulse-glow group"
             >
-              Receber Orçamento Grátis
+              Receber Orçamento
               <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
             </Button>
             
