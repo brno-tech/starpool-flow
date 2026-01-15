@@ -96,7 +96,7 @@ const Hero = () => {
               className="text-lg px-8 py-6"
             >
               <a
-                href="tel:+5531998562030"
+                href="tel:+5531920021799"
                 onClick={() => trackPhoneClick("hero")}
               >
                 <Phone className="mr-2" />
@@ -109,7 +109,7 @@ const Hero = () => {
               variant="hero-outline"
               onClick={() => {
                 trackWhatsAppClick("home");
-                window.open("https://wa.me/5531998562030", "_blank");
+                window.open("https://wa.me/5531920021799", "_blank");
               }}
               className="text-lg px-8 py-6"
             >

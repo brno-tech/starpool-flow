@@ -32,7 +32,7 @@ const Header = () => {
     >
       <nav className="container mx-auto px-4 py-4 flex items-center justify-between">
         <a href="#hero" className="flex items-center">
-          <img src={logo} alt="Starpools" className="h-12 w-auto" />
+          <img src={logo} alt="Piscinas Exclusivas" className="h-12 w-auto" />
         </a>
 
         {/* Desktop Menu */}
@@ -51,7 +51,7 @@ const Header = () => {
             <Button
               onClick={() => {
                 trackWhatsAppClick("home");
-                window.open("https://wa.me/5531998562030", "_blank");
+                window.open("https://wa.me/5531920021799", "_blank");
               }}
               className="bg-primary hover:bg-primary-glow text-primary-foreground pulse-glow"
             >
@@ -88,7 +88,7 @@ const Header = () => {
               <Button
                 onClick={() => {
                   trackWhatsAppClick("home");
-                  window.open("https://wa.me/5531998562030", "_blank");
+                  window.open("https://wa.me/5531920021799", "_blank");
                   setIsMobileMenuOpen(false);
                 }}
                 className="w-full bg-secondary hover:bg-secondary/90 text-secondary-foreground"

@@ -87,7 +87,7 @@ const FAQ = () => {
               Nossa equipe está pronta para esclarecer todas as suas questões e ajudar no seu projeto
             </p>
             <button
-              onClick={() => window.open("https://wa.me/5531998562030?text=Olá! Tenho algumas dúvidas sobre construção de piscinas", "_blank")}
+              onClick={() => window.open("https://wa.me/5531920021799?text=Olá! Tenho algumas dúvidas sobre construção de piscinas", "_blank")}
               className="inline-flex items-center gap-2 bg-secondary hover:bg-secondary/90 text-secondary-foreground px-6 py-3 rounded-lg font-semibold transition-all hover:scale-105"
             >
               <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">

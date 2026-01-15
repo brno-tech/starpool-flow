@@ -27,7 +27,7 @@ const ExitPopup = () => {
   const handleClaim = () => {
     trackWhatsAppClick("home");
     const message = "Olá! Vi a oferta especial e gostaria de garantir meu desconto de 10%!";
-    window.open(`https://wa.me/5531998562030?text=${encodeURIComponent(message)}`, "_blank");
+    window.open(`https://wa.me/5531920021799?text=${encodeURIComponent(message)}`, "_blank");
     setIsOpen(false);
   };
 

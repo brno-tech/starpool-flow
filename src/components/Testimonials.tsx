@@ -6,7 +6,7 @@ const testimonials = [
     name: "Carlos Mendes",
     location: "Belo Horizonte, MG",
     rating: 5,
-    text: "Simplesmente perfeito! A equipe da Starpools superou todas as expectativas. O acabamento em pool plastering ficou impecável e a piscina é o sonho da família.",
+    text: "Simplesmente perfeito! A equipe da Piscinas Exclusivas superou todas as expectativas. O acabamento em pool plastering ficou impecável e a piscina é o sonho da família.",
     project: "Pool Plastering Premium",
   },
   {
@@ -20,7 +20,7 @@ const testimonials = [
     name: "Roberto Alves",
     location: "Lagoa Santa, MG",
     rating: 5,
-    text: "A melhor decisão foi contratar a Starpools. Eles transformaram nosso quintal em um verdadeiro resort. A qualidade dos materiais e mão de obra é excepcional.",
+    text: "A melhor decisão foi contratar a Piscinas Exclusivas. Eles transformaram nosso quintal em um verdadeiro resort. A qualidade dos materiais e mão de obra é excepcional.",
     project: "Piscina Alvenaria + Azulejo",
   },
 ];
@@ -38,7 +38,7 @@ const Testimonials = () => {
             O Que Dizem Nossos Clientes
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Histórias reais de quem confiou na Starpools para realizar o sonho da piscina perfeita
+            Histórias reais de quem confiou na Piscinas Exclusivas para realizar o sonho da piscina perfeita
           </p>
         </div>
 

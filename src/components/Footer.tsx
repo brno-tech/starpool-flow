@@ -12,14 +12,14 @@ const Footer = () => {
           <div>
             <div className="text-2xl font-bold mb-4 flex items-center gap-2">
               <span className="text-secondary">★</span>
-              Starpools
+              Piscinas Exclusivas
             </div>
             <p className="text-white/70 mb-6 leading-relaxed">
               Especialistas em construção de piscinas exclusivas em Minas Gerais.
             </p>
             <div className="flex gap-4">
               <a 
-                href="https://www.instagram.com/starpoolsbr" 
+                href="https://www.instagram.com/piscinasexclusivasbr" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-white/10 hover:bg-secondary rounded-full flex items-center justify-center transition-colors"
@@ -83,11 +83,11 @@ const Footer = () => {
                 <div>
                   <p className="text-white/70">Telefone</p>
                   <a
-                    href="tel:5531998562030"
+                    href="tel:5531920021799"
                     className="hover:text-secondary transition-colors"
                     onClick={() => trackPhoneClick("footer")}
                   >
-                    (31) 99856-2030
+                    (31) 92002-1799
                   </a>
                 </div>
               </li>
@@ -115,7 +115,7 @@ const Footer = () => {
         <div className="border-t border-white/10 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-white/60 text-sm">
-              © {currentYear} Starpools. Todos os direitos reservados.
+              © {currentYear} Piscinas Exclusivas. Todos os direitos reservados.
             </p>
             <div className="flex gap-6 text-sm">
               <a href="#" className="text-white/60 hover:text-secondary transition-colors">

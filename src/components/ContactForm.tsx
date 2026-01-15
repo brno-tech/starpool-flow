@@ -34,7 +34,7 @@ ${formData.message ? `\nMensagem: ${formData.message}` : ''}
 
 Gostaria de receber um orçamento!`;
 
-    const whatsappUrl = `https://wa.me/5531998562030?text=${encodeURIComponent(whatsappMessage)}`;
+    const whatsappUrl = `https://wa.me/5531920021799?text=${encodeURIComponent(whatsappMessage)}`;
 
     trackWhatsAppClick("home");
     window.open(whatsappUrl, "_blank");
@@ -167,11 +167,11 @@ Gostaria de receber um orçamento!`;
             <div className="glass-dark p-6 rounded-xl">
               <p className="text-white/80 font-semibold mb-2">📞 Telefone</p>
               <a
-                href="tel:5531998562030"
+                href="tel:5531920021799"
                 className="text-white hover:text-secondary transition-colors"
                 onClick={() => trackPhoneClick("contato")}
               >
-                (31) 99856-2030
+                (31) 92002-1799
               </a>
             </div>
             <div className="glass-dark p-6 rounded-xl">

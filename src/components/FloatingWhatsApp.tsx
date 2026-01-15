@@ -26,7 +26,7 @@ const FloatingWhatsApp = () => {
   const handleClick = () => {
     trackWhatsAppClick("home");
     const message = "Olá! Gostaria de saber mais sobre construção de piscinas.";
-    window.open(`https://wa.me/5531998562030?text=${encodeURIComponent(message)}`, "_blank");
+    window.open(`https://wa.me/5531920021799?text=${encodeURIComponent(message)}`, "_blank");
   };
 
   if (!isVisible) return null;
