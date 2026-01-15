@@ -95,8 +95,8 @@ const Footer = () => {
                 <Mail className="w-5 h-5 text-secondary flex-shrink-0 mt-0.5" />
                 <div>
                   <p className="text-white/70">Email</p>
-                  <a href="mailto:starpoolrevest@gmail.com" className="hover:text-secondary transition-colors">
-                    starpoolrevest@gmail.com
+                  <a href="mailto:piscinasexclusivasbr@gmail.com" className="hover:text-secondary transition-colors">
+                    piscinasexclusivasbr@gmail.com
                   </a>
                 </div>
               </li>
