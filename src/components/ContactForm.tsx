@@ -71,7 +71,7 @@ Gostaria de receber um orçamento!`;
             {/* Urgency Banner */}
             <div className="bg-secondary/20 border border-secondary/30 rounded-xl p-4 mb-8 text-center">
               <p className="text-white font-semibold">
-                🔥 Estamos com 3 vagas disponíveis para este mês - Solicite já o seu orçamento!
+                🔥 Estamos com 3 vagas disponíveis para início em fevereiro - Solicite já o seu orçamento!
               </p>
             </div>
 

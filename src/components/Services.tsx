@@ -121,10 +121,7 @@ const Services = () => {
             <div className="w-12 h-12 bg-secondary rounded-full flex items-center justify-center">
               <Sparkles className="w-6 h-6 text-white" />
             </div>
-            <div className="text-left">
-              <p className="font-bold text-primary">Garantia de 10 Anos</p>
-              <p className="text-sm text-muted-foreground">100% de satisfação ou seu dinheiro de volta</p>
-            </div>
+            <p className="font-bold text-primary text-xl">Garantia de 10 Anos</p>
           </div>
         </div>
       </div>
